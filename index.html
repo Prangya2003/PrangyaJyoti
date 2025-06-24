@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#hero">
+                <div class="logo">Portfolio</div>
+            </a>
+            <div class="menu-icon" id="menuToggle">
+                <div class="hamburger"></div>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#certificates" class="nav-link">Certificates</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fa-solid fa-sun"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div>
+                    <h4 class="greeting">Hi, I'm</h4>
+                    <h1 class="name">Prangya Jyoti Mohanty</h1>
+                    <h2 class="title">
+                        <span>I'm a</span>
+                        <span id="rotatingText">Web Developer</span>
+                    </h2>
+                    <p class="description">
+                        I build exceptional digital experiences that are fast, accessible,
+                        visually appealing, and responsive. Even if you don't know what those
+                        words mean, I can help you achieve your online goals.
+                    </p>
+                </div>
+
+                <div class="cta-container">
+                    <a href="#contact" class="cta-button">Get In Touch</a>
+                    <a href="#projects" class="secondary-button" id="vmw">View My Work</a>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <div class="hero-img">
+                    <img src="./assets/Prangya.png" alt="Prangya Jyoti Mohanty">
+                </div>
+                <div class="decoration"></div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <span>Scroll down</span>
+            <div id="scrollDown">
+                <i class="fa-solid fa-angle-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="about-container">
+                
+                <div class="about-image">
+                    <div>
+
+                        <a href="./assets/PrangyaResume.pdf"> <button type="submit" disabled data-dnldResume
+                                class="cta-button " >View Resume </button></a>
+                    </div>
+                </div>
+
+                <div class="about-content">
+                    <h3 class="subheading">Who am I?</h3>
+                    <!-- <p>
+                        I'm a passionate frontend developer with 5 years of experience creating
+                        engaging and user-friendly web applications. My journey in tech started
+                        when I built my first website at 15, and I've been hooked ever since.
+                    </p>
+                    <p>
+                        I specialize in React and modern JavaScript, with a strong focus on
+                        performance, accessibility, and responsive design. I believe that great
+                        design and functionality should go hand in hand to create memorable
+                        user experiences.
+                    </p>
+                    <p>
+                        When I'm not coding, you can find me hiking, reading sci-fi novels,
+                        or experimenting with new cooking recipes. I'm also an advocate for
+                        open-source software and contribute to several projects in my free time.
+                    </p> -->
+
+                    <p>
+                        Aspiring Computer Science undergraduate with a solid foundation in programming languages and web
+                        development.
+                    </p>
+                    <p> Eager to apply my skills in Python, Django, and web technologies to contribute to meaningful
+                        projects, while gaining hands-on experience and enhancing my technical knowledge in the tech
+                        industry
+                    </p>
+                    <br>
+                    <p>
+                        I am a quick learner, adaptable, and passionate about leveraging technology to solve real-world
+                        problems. I thrive in collaborative environments and am excited to contribute to innovative
+                        projects that make a difference.
+                    </p>
+                    <br>
+                    <p>
+                        Let's connect and explore how I can contribute to your team or project!
+                    </p>
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <span>Name:</span>
+                            <span>Prangya Jyoti Mohanty</span>
+                        </div>
+                        <div class="info-item">
+                            <span>Email:</span>
+                            <span>prangya1712@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <span>Location:</span>
+                            <span>Koraput Odisha</span>
+                        </div>
+                        <div class="info-item">
+                            <span>Education:</span>
+                            <span>Computer Science <!--Engineer--> </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+        <div class="container">
+            <h2 class="heading">Skills</h2>
+            <div class="skills-container" id="skillsContainer">
+                <!-- Skills will be populated by JavaScript -->
+            </div>
+
+            <div class="additional-skills">
+                <h3 class="subheading">Additional Skills & Tools</h3>
+                <div class="tools-grid" id="toolsGrid">
+                    <!-- <div class="tool-item">Git</div>
+                     <div class="tool-item">Docker</div>
+                    <div class="tool-item">AWS</div>
+                    <div class="tool-item">Figma</div>
+                    <div class="tool-item">Webpack</div>
+                    <div class="tool-item">Jest</div>
+                    <div class="tool-item">Redux</div>
+                    <div class="tool-item">SASS</div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <h2 class="heading">Projects</h2>
+        <div class="container">
+            <div class="projects-container" id="projectsContainer">
+                <!-- Projects will be populated by JavaScript -->
+            </div>
+
+            <div class="more-projects">
+                <p>Want to see more? Check out my GitHub profile for additional projects.</p>
+                <a href="https://github.com/Prangya2003" target="_blank" class="github-button">View GitHub Profile</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section class="section" id="certificates">
+        <div class="container">
+            <h2 class="heading">Certificates</h2>
+            <div class="certificates-container">
+                <button class="nav-button" id="prevCert">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+
+                <div class="carousel" id="certCarousel">
+                    <!-- Certificates will be populated by JavaScript -->
+                </div>
+
+                <button class="nav-button" id="nextCert">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+
+            <div class="dots-container" id="certDots">
+                <!-- Dots will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3 class="info-heading">Contact Information</h3>
+
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:prangya1712@gmail.com">prangya1712@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4>Phone</h4>
+                            <a href="">+91 7815078114</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Koraput , Odisha , India</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/prangya-jyoti-mohanty-284866280/" target="_blank"
+                            aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/Prangya2003/" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <!-- <a href="https://twitter.com/" target="_blank" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a> -->
+                    </div>
+                </div>
+
+                <div class="contact-form" >
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" name="subject" placeholder="Subject" required>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-button" id="submitButton">Send Message</button>
+
+                        <div class="success-message" id="successMessage">
+                            Message sent successfully! I'll get back to you soon.
+                        </div>
+
+                        <div class="error-message" id="errorMessage">
+                            Something went wrong. Please try again.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Prangya Jyoti Mohanty</h3>
+                    <p>Creating digital experiences that matter</p>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p>Email: prangya1712@gmail.com</p>
+                    <p>Phone: +91 7815078114</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>
+                    <!--All rights reserved.--> Let's Connect
+                    <br> &copy; <span id="currYear">2025</span> Prangya Jyoti Mohanty
+                    <br>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Project Details Modal -->
+    <div class="modal" id="projectModal">
+        <div class="modal-content">
+            <button class="close-modal" id="closeModal">&times;</button>
+            <div class="project-details-container" id="projectDetails">
+                <!-- Project details will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
