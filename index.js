@@ -259,7 +259,7 @@ document.querySelectorAll('.nav-link').forEach(link => {
 
 // ===== THEME TOGGLE =====
 function initTheme() {
-    localStorage.setItem('darkMode' , 'true');
+    localStorage.setItem('darkMode', 'true');
     const isDark = localStorage.getItem('darkMode') === 'true';
     document.body.classList.toggle('light-theme', !isDark);
     themeToggle.innerHTML = isDark ? '<i class="fa-solid fa-sun"></i>' : '<i class="fa-solid fa-moon" style="color: #1a2e3c;"></i>';
@@ -276,8 +276,8 @@ themeToggle.addEventListener('click', () => {
         document.body.style = '--dark-text : black ; --dark-card : none ; --vmw-bg : #121212';
 
     } else {
-        document.body.style = '--dark-text : #e9ecef ; --navBG : rgba(14, 13, 13, 0.9); ' ;
-        
+        document.body.style = '--dark-text : #e9ecef ; --navBG : rgba(14, 13, 13, 0.9); ';
+
     }
 });
 
@@ -387,6 +387,7 @@ function renderCertificates() {
                     <p class="certificate-date">Issued: ${formatDate(cert.date)}</p>
                 </div>
             `;
+        certCard.addEventListener('click', () => scrollToCertificate(index));
         certCarousel.appendChild(certCard);
 
         // Create dot
@@ -464,17 +465,17 @@ contactForm.addEventListener('submit', (e) => {
     submitButton.textContent = 'Sending...';
     submitButton.disabled = true;
 
-     const form = e.target;
+    const form = e.target;
 
     const name = form.name.value;
     const email = form.email.value;
     const subject = form.subject.value;
     const message = form.message.value;
 
-    const recipient = data.email; 
+    const recipient = data.email;
 
     const gmailURL = `https://mail.google.com/mail/?view=cm&fs=1&to=${recipient}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(
-      `From: ${name} <${email}>\n\n${message}`
+        `From: ${name} <${email}>\n\n${message}`
     )}`;
 
     window.open(gmailURL, "_blank");
@@ -604,12 +605,15 @@ function showProjectDetails(projectId) {
                 <div class="project-cta">
                     <h2>Like What You See?</h2>
                     <p>Feel free to reach out if you're interested in working together!</p>
-                    <a href="index.html#contact" class="project-cta-button">Contact Me</a>
+                    <a href="index.html#contact" id="closeContact" class="project-cta-button">Contact Me</a>
                 </div>
             `;
 
     // Add event listener to back button
     document.getElementById('backButton').addEventListener('click', () => {
+        projectModal.style.display = 'none';
+    });
+    document.getElementById('closeContact').addEventListener('click', () => {
         projectModal.style.display = 'none';
     });
 
