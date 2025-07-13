@@ -32,7 +32,7 @@ const data = {
             details: "A simple yet addictive Snake game built with Python and Pygame. The game features classic mechanics where the player controls a snake to eat food, growing longer with each bite while avoiding collisions with walls and itself. The project showcases my understanding of game loops, event handling, and basic graphics rendering in Pygame. It also includes sound effects and a scoring system to enhance the gameplay experience.",
             github: "https://github.com/Prangya2003",
             link: "",
-            image: "./assets/projects/snake.jpg",
+            image: "./assets/projects/Snake.jpg",
             features: [
                 { li: "Responsive design that works on all devices" },
                 { li: "Comprehensive error handling" },
